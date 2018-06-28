@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <div class="initialHide"></div>
+  <div class="devices" (touchstart)="onScroll($event, 'start')" (touchend)="onScroll($event, 'end')" 
+      (mouseWheelUp)="mouseWheelUpFunc($event)" (mouseWheelDown)="mouseWheelDownFunc($event)" mouseWheel [(devices)]="devices"
+      (devicesChanged)="updateDevices($event)">
+    <div class="device">
+      <app-thumbnail *ngFor="let device of devices" [device]="device" (click)="select(device)"></app-thumbnail>
+    </div>
+  </div>
+  <div class="endHide"></div>
+</div>

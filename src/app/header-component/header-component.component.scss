@@ -1,0 +1,60 @@
+.header {
+  float: left;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  width: 60%;
+  padding-top: 10vh;
+  margin: 0;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  @media only screen and (max-width: 768px) and (min-width: 481px) {
+    padding-top: 8vh;
+    padding-left: 50px;
+    font-size: 50px;
+  }
+  @media only screen and (min-width: 769px) {
+    width: 50%;
+    padding-top: 12vh;
+  }
+}
+
+.backButton {
+  float: left;
+  width: 20%;
+  height: 75px;
+  background: url("../../assets/back-button.svg") center center no-repeat;
+  background-size: 20px;
+  @media only screen and (max-width: 768px) and (min-width: 481px) {
+    background-size: 35px;
+  }
+  @media only screen and (min-width: 769px) {
+    width: 5%;
+  }
+}
+
+.addButton {
+  float: right;
+  width: 20%;
+  height: 75px;
+  background: url("../../assets/addButton.svg") center center no-repeat;
+  background-size: 20px;
+  @media only screen and (max-width: 768px) and (min-width: 481px) {
+    width: 5%;
+    height: 5%;
+    background-size: 25px;
+    margin-top: 8.5vh;
+    padding: 4%;
+    margin-right: 6%;
+    background-color: #B9F9FD;
+  }
+  @media only screen and (min-width: 769px) {
+    width: 35px;
+    height: 35px;
+    background-size: 15px;
+    margin-top: 13vh;
+    margin-right: 8%;
+    background-color: #B9F9FD;
+  }
+}

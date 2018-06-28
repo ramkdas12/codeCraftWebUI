@@ -1,0 +1,11 @@
+<div class="shades">
+  <h3 class="shadesHeader">
+    <span class="title">Shades</span>
+  </h3>
+  <div class="shadesWrapper">
+    <div *ngFor="let shade of shades" [ngStyle]="{'background-color': shade}" 
+      [ngClass]="selectedShade === shade ? 'shade selected': 'shade'" (click)="select(shade)">
+      <span [ngClass]="selectedShade === shade ? 'tickIcon': ''"></span>
+    </div>
+  </div>
+</div>

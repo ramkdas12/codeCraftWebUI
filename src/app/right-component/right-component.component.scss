@@ -1,0 +1,52 @@
+.rightComponent {
+  padding: 20px 20px 0 40px;
+  overflow-y: auto;
+  @media only screen and (max-width: 768px) and (min-width: 481px) {
+    padding: 60px 20px 0 60px;
+  }
+  @media only screen and (min-width: 769px) {
+    padding: 5% 20px 0 8%;
+  }
+  .titleSection {
+    @media only screen and (max-width: 768px) and (min-width: 481px) {
+      padding: 25px 0;
+    }
+    .name {
+      font-size: 24px;
+      font-weight: 700;
+      display: inline-block;
+      width: 35%;
+      text-transform: uppercase;
+      text-shadow: 0px 10px 30px #bbb;
+      @media only screen and (max-width: 768px) and (min-width: 481px) {
+        font-size: 40px;
+        margin: 0;
+        width: 75%;
+      }
+      @media only screen and (min-width: 769px) {
+        font-size: 32px;
+        width: 75%;
+      }
+    }
+    .isOn {
+      display: inline-block;
+      vertical-align: top;
+      text-align: right;
+      width: 62%;
+      margin-top: -5px;
+      @media only screen and (max-width: 768px) and (min-width: 481px) {
+        vertical-align: middle;
+        width: 20%;
+        margin-top: -20px;
+        margin-left: 10px;
+      }
+      @media only screen and (min-width: 769px) {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: right;
+        width: 24%;
+        margin-top: -15px;
+      }
+    }
+  }
+}

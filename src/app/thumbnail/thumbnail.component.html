@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="deviceImg">
+    <div [class]="device.isActive ? 'selected backGround': 'backGround'">
+      <img [src]="device.img" [class]="device.isActive ? 'selected deviceThumb': 'deviceThumb'">
+      <div class="name" [hidden]="device.isActive">{{device.name}}</div>
+      <div [hidden]="!device.isActive" [class]="device.isActive ? 'selected selectIcon': 'selectIcon'">
+        
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,98 @@
+@import "../colors.scss";
+.container {
+  padding: 10px 25px;
+  .deviceImg {
+    height: 125px;
+    @media only screen and (max-width: 768px) and (min-width: 481px) {
+      height: 200px;
+    }
+    .backGround {
+      height: inherit; // &.selected {
+      //   position: fixed;
+      // }
+      img.deviceThumb {
+        &.selected {
+          transform: matrix(1.07, 0, 0, 1.07, 30, 0) !important;
+          transition: transform 0.5s;
+          box-shadow: 5px 5px 25px -5px #bbb;
+          @media only screen and (max-width: 768px) and (min-width: 481px) {
+            transform: matrix(1.07, 0, 0, 1.07, 50, 0) !important;
+          }
+          @media only screen and (min-width: 769px) {
+            transform: matrix(1.2, 0, 0, 1.2, 55, 0) !important; 
+          }
+        }
+        width: 100px;
+        height: 100px;
+        display: block;
+        z-index: 25;
+        position: relative;
+        transform: translate(-10px, -10px);
+        margin: auto;
+        @media only screen and (max-width: 768px) and (min-width: 481px) {
+          width: 150px;
+          height: 150px;
+          transform: translate(-10px, -10px);
+          margin: 0 15px;
+        }
+      }
+      .name {
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -100px;
+        padding-top: 80px;
+        background: white;
+        transform: translate(0px, 15px);
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: sans-serif;
+        margin: auto;
+        @media only screen and (max-width: 768px) and (min-width: 481px) {
+          height: 150px;
+          width: 150px;
+          top: -140px;
+          padding-top: 117px;
+          transform: translate(20px, 15px);
+          font-size: 20px;
+          font-weight: 800;
+          margin: 0;
+        }
+      }
+      .selectIcon {
+        height: 35px;
+        width: 35px;
+        /* right: -135%; */
+        background-color: #BCFBE9;
+        background-image: url("../../assets/nextButton.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 9px;
+        position: relative;
+        /* top: -16%; */
+        z-index: 26;
+        box-shadow: 5px 5px 25px -5px #bbb;
+        @media only screen and (max-width: 768px) and (min-width: 481px) {
+          height: 50px;
+          width: 50px;
+          background-size: 15px;
+        }
+        &.selected {
+          transform: translate(325%, -40%);
+          transition: transform 0.5s;
+          @media only screen and (max-width: 768px) and (min-width: 481px) {
+            transform: translate(10%, -40%);
+            right: -30px;
+            position: absolute;
+          }
+          @media only screen and (min-width: 769px) {
+            transform: translate(15%, -40%);
+            right: -30px;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}

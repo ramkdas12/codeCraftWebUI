@@ -1,0 +1,48 @@
+@import "../colors.scss";
+.initialHide {
+  height: 20.1vh;
+  position: fixed;
+  width: 40%;
+  top: 0;
+  opacity: 0.8;
+  overflow: hidden;
+  background: linear-gradient(to bottom, $initialColor, #9A7DF5);
+  z-index: 49;
+  @media only screen and (max-width: 768px) and (min-width: 481px) {
+    height: 21.1vh;
+    width: 30%;
+  }
+  @media only screen and (min-width: 769px) {
+    width: 15%;
+    height: 21vh;
+  }
+}
+
+.endHide {
+  position: fixed;
+  bottom: 0;
+  height: 15vh;
+  width: 40%;
+  opacity: 0.4;
+  background: linear-gradient(to bottom, #7AAFF6, $endColor);
+  z-index: 49;
+  @media only screen and (max-width: 768px) and (min-width: 481px) {
+    width: 30%;
+  }
+  @media only screen and (min-width: 769px) {
+    width: 15%;
+  }
+}
+
+.devices {
+  height: 100vh;
+  position: fixed;
+  margin: auto;
+  width: 40%;
+  @media only screen and (max-width: 768px) and (min-width: 481px) {
+    width: 30%;
+  }
+  @media only screen and (min-width: 769px) {
+    width: 15%;
+  }
+}

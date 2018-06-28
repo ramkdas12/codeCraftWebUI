@@ -1,0 +1,11 @@
+<div class="rightComponent">
+  <div class="titleSection">
+    <div class="name">{{device.name}}</div>
+    <div class="isOn">
+      <app-toggle [(model)]="device.isSelected" (modelChanged)="updateSelect($event)"></app-toggle>
+    </div>
+  </div>
+  <app-shades [(selectedShade)]="device.properties.shade" (shadeChanged)="updateShade($event)"></app-shades>
+  <app-modes [(selectedMode)]="device.properties.mode" (modeChanged)="updateMode($event)"></app-modes>
+  <app-curved-slider [(selectRange)]="device.properties.intensity" (rangeChanged)="updateIntensity($event)"></app-curved-slider>
+</div>

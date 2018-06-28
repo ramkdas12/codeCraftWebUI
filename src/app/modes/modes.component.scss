@@ -1,0 +1,150 @@
+@import "../colors.scss";
+.modes {
+  h3.modesHeader {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #B378FF;
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+    @media only screen and (max-width: 768px) and (min-width: 481px) {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 20px 0 25px;
+    }
+    @media only screen and (min-width: 769px) {
+      margin: 3% 0 20px;
+      font-weight: 900;
+    }
+  }
+  .modesWrapper {
+    .selected {
+      // transform: scale(1.5);
+      // transition: transform 0.5s;
+      background: linear-gradient(to right, $initialColor, $endColor);
+      box-shadow: 0px 20px 25px -5px #bbb;
+      color: white;
+      @media only screen and (max-width: 768px) and (min-width: 481px) {
+        box-shadow: 0px 30px 25px -5px #bbb;
+      }
+    }
+  }
+  .mode {
+    width: 100%;
+    display: block;
+    height: 35px;
+    padding: 5px 0;
+    @media only screen and (max-width: 768px) and (min-width: 481px) {
+      height: 55px;
+      font-size: 20px;
+    }
+    @media only screen and (min-width: 769px) {
+      padding: 8px 0;
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      padding: 3% 0;
+      text-align: center;
+      @media only screen and (min-width: 769px) {
+        padding: 0;
+      }
+    }
+    .modeIcon {
+      width: 20%;
+      @media only screen and (max-width: 768px) and (min-width: 481px) {
+        width: 15%;
+      }
+      @media only screen and (min-width: 769px) {
+        width: 10%;
+      }
+    }
+    .modeTime {
+      width: 50%;
+      text-transform: capitalize;
+      text-align: left;
+      @media only screen and (max-width: 768px) and (min-width: 481px) {
+        width: 40%;
+      }
+    }
+    .modeValue {
+      display: none;
+      @media only screen and (min-width: 481px) {
+        display: inline-block;
+        width: 20%;
+      }
+    }
+    .tickIconGray {
+      width: 20%;
+      text-align: right;
+      background-image: url(./../../assets/greyTickIcon.svg);
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: center;
+      @media only screen and (max-width: 768px) and (min-width: 481px) {
+        background-size: 30%;
+      }
+      @media only screen and (min-width: 481px) {
+        background-size: 15%;
+        width: 18%;
+      }
+    }
+    .tickIconWhite {
+      width: 20%;
+      text-align: right;
+      background-image: url(./../../assets/tickIcon.svg);
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: center;
+      @media only screen and (max-width: 768px) and (min-width: 481px) {
+        background-size: 30%;
+      }
+      @media only screen and (min-width: 481px) {
+        background-size: 15%;
+        width: 18%;
+      }
+    }
+  }
+  .modesHeader {
+    line-height: 2em;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .modesHeader .title {
+    -webkit-order: 1;
+    -moz-order: 1;
+    -ms-order: 1;
+    order: 1;
+  }
+  .modesHeader:after {
+    content: "";
+    margin: 0px 0px 0 4px;
+    background: -webkit-radial-gradient(50% 50%, circle, #EBDBFF 36%, transparent 0%);
+    background: -moz-radial-gradient(50% 50%, circle, #EBDBFF 36%, transparent 0%);
+    background: radial-gradient(circle at 50% 50%, #EBDBFF 36%, transparent 0%);
+    background-size: 6% 50%;
+    background-position: 0 0.5em;
+    background-repeat: repeat-x;
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-order: 2;
+    -moz-order: 2;
+    -ms-order: 2;
+    order: 2;
+    @media only screen and (max-width: 768px) and (min-width: 481px) {
+      background-size: 2% 10%;
+      background-position: 0 1em;
+    }
+    @media only screen and (min-width: 769px) {
+      background-size: 1% 49%;
+    }
+  }
+}

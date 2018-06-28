@@ -1,0 +1,14 @@
+<div class="modes">
+  <h3 class="modesHeader">
+    <span class="title">Modes</span>
+  </h3>
+  <div class="modesWrapper">
+    <div *ngFor="let mode of modes" [ngClass]="selectedMode === mode.time ? 'mode selected': 'mode'"
+      (click)="select(mode.time)">
+      <span class="modeIcon">{{mode.icon}}</span>
+      <span class="modeTime">{{mode.time}}</span>
+      <span class="modeValue">{{mode.value}}</span>
+      <span [ngClass]="selectedMode === mode.time ? 'tickIconWhite': 'tickIconGray'"></span>
+    </div>
+  </div>
+</div>
